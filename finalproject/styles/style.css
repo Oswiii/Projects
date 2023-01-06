@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: cursive;
+}
+/* Log In */
+#bg-div{
+	position: absolute;
+	background-image: url('car.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 60%;
+}
+#bg-div h1{
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20%;
+}
+#login-box{
+	float: right;
+	padding: 50px;
+	margin: 7% 2%;
+}
+#login-box label{ font-size: 24px; }
+#login-box input{ 
+	font-size: 24px;
+	padding:  2px 5px;
+	border-radius: 5px;
+	border: 1px solid #303030;
+	width: 350px; 
+}
+#login-box #button{
+	background: #dadce0;
+	padding: 10px;
+	width: 361px;
+}
+#login-box #button:hover{
+	letter-spacing: 2px; 
+	background: #303030; 
+	color: #fff; }
+#login-box h2{
+	letter-spacing: 2px;
+	font-size: 40px;
+	text-align: center;
+}
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+/* Sign In */
+#bg-sign{
+	position: absolute;
+	right: 0;
+	background-image: url('car.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 60%;
+}
+#bg-sign h1{
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20%;
+}
+#signup-box h2{
+	letter-spacing: 2px;
+	font-size: 40px;
+	text-align: center;
+	margin-right: 10%;
+}
+#bg-sign p{ font-size: 20px; text-align: center; }
+#signup-box{
+	float: right;
+	padding: 50px;
+}
+#signup-box label{ font-size: 24px; }
+#signup-box input{ 
+	font-size: 24px;
+	padding:  2px 5px;
+	border-radius: 5px;
+	border: 1px solid #303030;
+	width: 350px; 
+}
+#first-div #next, #second-div #signup, #second-div #back{
+	background: #dadce0;
+	padding: 10px;
+	width: 361px;
+}
+#first-div #next:hover, #second-div #signup:hover, #second-div #back:hover{
+	letter-spacing: 2px; 
+	background: #303030; 
+	color: #fff; 
+}

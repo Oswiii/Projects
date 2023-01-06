@@ -1,0 +1,136 @@
+
+/* Mini Map Section Style ---------------------------------------------------------------------------------------------------*/
+.map{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(10, auto);
+	margin-left: 50%;
+	margin-top: 13em;
+	box-shadow: 1px 1px 5px 1px rgb(0,0,0,.3);
+	width: 100%;
+	padding-left: 60px;
+  padding-right: 50px;
+}
+.map input{
+	margin-top: 40px;
+	margin-bottom: 50px;
+	width: 80px;
+	height: 150px;
+	font-size: 20px;
+	padding: 10px;
+	background: #87e36b;
+	border: 1px solid #303030;
+	cursor: pointer;
+}
+.map input:hover{
+	background: #57b03c;
+}
+.map .ex , .en{
+	font-size: 35px;
+	position: absolute;
+	transform: rotate(90deg);
+	margin-top: 6.1em;
+	margin-left: -15px;
+}
+.ex{ right: 0; margin-right: -5px;}
+.map .le , .ri{
+	font-size: 20px;
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 10px;
+}
+.ri{bottom: 0; margin-bottom: 10px;}
+
+/* Timer Section Style  ---------------------------------------------------------------------------------------------------*/
+#timer-section{
+  position: fixed;
+  z-index: 2; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  margin-top: 5%;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#setTimer{
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 34%;
+  width: 500px;
+  padding-top: -40px;
+  padding-bottom: 40px;
+  box-shadow: 1px 1px 5px 1px rgb(0,0,0,.3);
+  text-transform: uppercase;
+  background: #fff;
+}
+#setTimer .lot{font-size: 30px; margin-left: 25px;}
+#setTimer #lot{
+	text-align: center;
+	font-size: 30px;
+	width: 50px;
+	border: none;
+	padding-bottom: 20px;
+}
+/* exit (x) style ---------------------------------------------------------------------------------------------------*/
+#exit{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -18px;
+  margin-left: 14em;
+  border: 1px solid #303030;
+  border-radius: 100%;
+  background: #fff;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+#exit:hover{
+  transform: scale(1.1); 
+  background: red; 
+  color: #fff;}
+#exit span{
+  font-size: 20px;
+  font-weight: 800;
+}
+#setTimer h1{
+  margin-top: 0;
+  color: #fff;
+  font-size: 40px;
+  background: #303030;
+  padding: 20px;
+}
+#setTimer label{ font-size: 18px;}
+#timer{
+  margin: 20px 0 40px 0;
+  font-size: 45px;
+  line-height: 1.1;
+  transform: scaleY(1.2);
+}
+#timer span{ font-size: 40px; }
+#start, #stop{
+  width: 300px;
+  padding: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  transition: all ease .3s;
+  background: #c4c4c4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#start{
+  margin-top: 1px;
+}
+#start:hover, #stop:hover{
+  background: #303030;
+  color: #fff;
+  font-weight: 600;
+}

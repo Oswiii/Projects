@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{ font-family: cursive; }
+#navbar{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding:  2% 5%;
+	background: rgb(2, 158, 247,.5);
+	z-index: 1;
+	transition: .6s;
+}
+#navbar span{ text-transform: uppercase; font-weight: 600;}
+#navbar span, a{ font-size: 24px; color: #fff; letter-spacing: 2px;}
+#navbar a{ 
+	float: right;
+	margin-right: 10%;
+	background: rgb(0, 0, 0, .3); 
+	padding: 5px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: .4s;
+}
+#navbar a:hover{ background: rgb(0, 0, 0,.8); box-shadow: 3px 3px 5px 1px rgb(0, 0, 0,.3);}
+h1{ font-size: 40px; }
+p { line-height: 1.8; color: #505050;}
+.nav{
+	width: 80%;
+	box-shadow: 1px 1px 5px 1px #303030;
+	border-radius: 10px;
+	margin-top: 2%;
+}
+.details{
+	margin-top: 3%;
+	width: 50%;
+
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	background: #fff;
+	padding: 2% 5%;
+	margin-left:3%;
+}
+.pic{
+	border-radius: 10px;
+	margin-top: 2px;
+	height: 300px;
+	width: 600px;
+	box-shadow: 1px 1px 5px 1px #303030;
+}
+.login-pic{
+	border-radius: 10px;
+	margin-top: 5%;
+	width: 700px;
+	height: 300px;
+	box-shadow: 1px 1px 5px 1px #303030;
+}
+img{ transition: .4s; }
+img:hover{ transform: scale(1.05); }
