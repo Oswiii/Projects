@@ -1,0 +1,165 @@
+/*font family from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+
+html {
+  font-size: 62.5%; /*62.5% = 10px; to make it easier to calculate REM units.*/
+}
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  background-color: #faedcd;
+  height: 100vh;
+}
+#clock {max-width: 600px;}
+
+/* for smaller screens below 700px */
+@media only screen and (max-width: 700px) {
+  body {font-size: 1.8rem;}
+}
+
+/*for smaller screens below 300px*/
+@media only screen and (max-width: 300px) {
+  body {font-size: 1.6rem;}
+}
+
+.nav-top {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 10px;
+  justify-content: space-between; /* Align items to the sides */
+  padding: 1px 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 34px;
+  z-index: 2; /* Ensure it's above other content */
+}
+
+.nav-top ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.nav-top li {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.nav-top ul li i {
+  font-size: 24px;
+  margin: 0 5px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #e6252541;
+  padding: 10px;
+  border-radius: 100%;
+}
+.nav-icons {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center; /* Align icons vertically in the center */
+}
+
+
+.nav-bot {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  text-align: center;
+  padding: 1px 0;
+  justify-content: center;
+}
+
+.nav-bot ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-bot ul li { display: inline; }
+
+.nav-bot ul li i {
+  font-size: 24px;
+  margin: 0 5rem;
+  color: #ffb3b3;
+  cursor: pointer;
+}
+.nav-bot ul li i:hover {
+  color: #3b0d0d;
+}
+
+.icon-active {
+  color: #3b0d0d !important;
+}
+
+#countryTime h1{
+  padding: 10px 0;
+  text-align: left;
+  border-bottom: 2px solid #3b0d0d;
+}
+.content {
+  text-align: center;
+  margin-top: 20px;
+}
+  .realClock {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 140px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px 1px rgba(230, 116, 116, 0.5);
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    
+  }
+  .hour-hand{margin-top: -40px; background-color: aqua;}
+  .minute-hand{margin-top: -60px;}
+  .second-hand{margin-top: -70px;}
+  
+  .center-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  .hour-hand {
+    width: 4px;
+    height: 40px;
+    background: #333;
+    transform-origin: 50% 100%;
+  }
+  
+  .minute-hand {
+    width: 3px;
+    height: 60px;
+    background: #333;
+    transform-origin: 50% 100%;
+  }
+  
+  .second-hand {
+    width: 1px;
+    height: 70px;
+    background: red; /* Change color for the second hand */
+    transform-origin: 50% 100%;
+  }
+    
+  #clockDisplay{ font-size: 24px;}

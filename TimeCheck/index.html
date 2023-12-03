@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time, Timer, and Alarm</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  <nav class="nav-bot">
+    <ul>
+      <li><i id="worldclock-i" onclick="showWorldClock()" class="fas fa-clock icon-active"></i></li>
+      <li><i id="alarm-i" onclick="showAlarm()" class="fas fa-hourglass-half"></i></li>
+      <li><i id="timer-i" onclick="showTimer()" class="fas fa-stopwatch"></i></li>
+    </ul>
+  </nav>
+  
+  <div class="content" id="worldClockContent"> 
+    <nav class="nav-top">
+      <ul>
+        <li><span>Time Zone</span></li>
+          <li class="nav-icons">
+            <i id="alarm-i" onclick="TimeZoneAdd()" class="fas fa-plus"></i>
+            <i id="timer-i" onclick="TimezoneSetting()" class="fa fa-sliders"></i>
+          </li>
+      </ul>
+    </nav>
+    <br>
+    <div class="clock">
+      <div class="display">
+        <br><br><br>
+            <div class="realClock">
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+                <div class="second-hand"></div>
+                <div class="center-circle"></div>
+            </div>
+            <br><br><br><br><br><br><br>
+            <span id="clockDisplay"></span>
+      </div>
+    </div>
+    <div id="countryTime">
+        <h1>World Clock</h1>
+        <div class="country-time">
+          <div class="country" data-timezone="Asia/Manila">
+            <button onclick="useTimezone('Asia/Manila')">Use</button> Manila, Philippines
+          </div>
+          <div class="country" data-timezone="Asia/Singapore">
+            <button onclick="useTimezone('Asia/Singapore')">Use</button> Singapore
+          </div>
+          <!-- Add more countries here -->
+        </div>
+      </div>
+  </div>
+  <br><br>
+  <div class="content" id="alarmContent" style="display: none;">
+    <nav class="nav-top">
+      <ul>
+        <li><span>Alarm</span></li>
+          <li class="nav-icons">
+            <i id="alarm-i" onclick="TimeZoneAdd()" class="fas fa-plus"></i>
+            <i id="timer-i" onclick="TimezoneSetting()" class="fa fa-sliders"></i>
+          </li>
+      </ul>
+    </nav>
+    <span>Set Alarms</span>
+  </div>
+  
+  <div class="content" id="timerContent" style="display: none;">
+    <nav class="nav-top">
+      <ul>
+        <li><span>Timer</span></li>
+          <li class="nav-icons">
+            <i id="alarm-i" onclick="TimeZoneAdd()" class="fas fa-plus"></i>
+            <i id="timer-i" onclick="TimezoneSetting()" class="fa fa-sliders"></i>
+          </li>
+      </ul>
+    </nav>
+    <div class="timer">
+      <div class="display">
+        <span id="timerDisplay">00:00:00.000</span>
+      </div>
+      <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
